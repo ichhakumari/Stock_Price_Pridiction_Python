@@ -15,3 +15,7 @@ from sklearn import metrics
 
 import warnings
 warnings.filterwarnings('ignore')
+
+
+!pip install -q yfinance
+

@@ -37,5 +37,12 @@ yf.pdr_override()
 
 # For time stamps
 from datetime import datetime
+# The tech stocks we'll use for this analysis
+tech_list = ['AAPL', 'GOOG', 'MSFT', 'AMZN']
 
+# Set up End and Start times for data grab
+tech_list = ['AAPL', 'GOOG', 'MSFT', 'AMZN']
+
+end = datetime.now()
+start = datetime(end.year - 1, end.month, end.day)
 

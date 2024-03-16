@@ -28,3 +28,14 @@ sns.set_style('whitegrid')
 plt.style.use("fivethirtyeight")
 %matplotlib inline
 
+# For reading stock data from yahoo
+from pandas_datareader.data import DataReader
+import yfinance as yf
+from pandas_datareader import data as pdr
+
+yf.pdr_override()
+
+# For time stamps
+from datetime import datetime
+
+

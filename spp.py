@@ -62,3 +62,6 @@ df.tail(10)
 
 # Summary Stats
 AAPL.describe()
+
+
+AAPL.info()

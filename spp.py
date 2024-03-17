@@ -59,3 +59,6 @@ for company, com_name in zip(company_list, company_name):
 df = pd.concat(company_list, axis=0)
 df.tail(10)
 
+
+# Summary Stats
+AAPL.describe()

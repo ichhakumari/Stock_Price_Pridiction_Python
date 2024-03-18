@@ -65,3 +65,7 @@ AAPL.describe()
 
 
 AAPL.info()
+
+# Let's see a historical view of the closing price
+plt.figure(figsize=(15, 10))
+plt.subplots_adjust(top=1.25, bottom=1.2)

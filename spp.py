@@ -77,3 +77,12 @@ for i, company in enumerate(company_list, 1):
     plt.title(f"Closing Price of {tech_list[i - 1]}")
  plt.tight_layout()
 
+
+# Now let's plot the total volume of stock being traded each day
+plt.figure(figsize=(15, 10))
+plt.subplots_adjust(top=1.25, bottom=1.2)
+
+for i, company in enumerate(company_list, 1):
+    plt.subplot(2, 2, i)
+    company['Volume'].plot()
+    

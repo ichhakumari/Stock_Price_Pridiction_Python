@@ -37,6 +37,7 @@ yf.pdr_override()
 
 # For time stamps
 from datetime import datetime
+
 # The tech stocks we'll use for this analysis
 tech_list = ['AAPL', 'GOOG', 'MSFT', 'AMZN']
 
@@ -105,7 +106,6 @@ fig.set_figwidth(15)
 
 AAPL[['Adj Close', 'MA for 10 days', 'MA for 20 days', 'MA for 50 days']].plot(ax=axes[0,0])
 axes[0,0].set_title('APPLE')
-
 
 GOOG[['Adj Close', 'MA for 10 days', 'MA for 20 days', 'MA for 50 days']].plot(ax=axes[0,1])
 axes[0,1].set_title('GOOGLE')

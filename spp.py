@@ -107,5 +107,10 @@ AAPL[['Adj Close', 'MA for 10 days', 'MA for 20 days', 'MA for 50 days']].plot(a
 axes[0,0].set_title('APPLE')
 
 
+GOOG[['Adj Close', 'MA for 10 days', 'MA for 20 days', 'MA for 50 days']].plot(ax=axes[0,1])
+axes[0,1].set_title('GOOGLE')
+
+
+
 fig.tight_layout()
 

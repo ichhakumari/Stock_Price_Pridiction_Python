@@ -81,4 +81,26 @@ for i, company in enumerate(company_list, 1):
 # Now let's plot the total volume of stock being traded each day
 plt.figure(figsize=(15, 10))
 plt.subplots_adjust(top=1.25, bottom=1.2)
+for i, company in enumerate(company_list, 1):
+    plt.subplot(2, 2, i)
+    company['Volume'].plot()
+    plt.ylabel('Volume')
+    plt.xlabel(None)
+    plt.title(f"Sales Volume for {tech_list[i - 1]}")
+
+plt.tight_layout()
+
+
+ma_day = [10, 20, 50]
+
+for ma in ma_day:
+    for company in company_list:
+        column_name = f"MA for {ma} days"
+        company[column_name] = company['Adj Close'].rolling(ma).mean()
+
+
+fig, axes = plt.subplots(nrows=2, ncols=2)
+fig.set_figheight(10)
+fig.set_figwidth(15)
+
 

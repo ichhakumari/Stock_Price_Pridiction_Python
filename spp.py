@@ -103,4 +103,9 @@ fig, axes = plt.subplots(nrows=2, ncols=2)
 fig.set_figheight(10)
 fig.set_figwidth(15)
 
+AAPL[['Adj Close', 'MA for 10 days', 'MA for 20 days', 'MA for 50 days']].plot(ax=axes[0,0])
+axes[0,0].set_title('APPLE')
+
+
+fig.tight_layout()
 

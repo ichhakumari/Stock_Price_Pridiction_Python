@@ -118,3 +118,12 @@ axes[1,1].set_title('AMAZON')
 
 fig.tight_layout()
 
+
+# We'll use pct_change to find the percent change for each day
+for company in company_list:
+    company['Daily Return'] = company['Adj Close'].pct_change()
+
+# Then we'll plot the daily return percentage
+fig, axes = plt.subplots(nrows=2, ncols=2)
+fig.set_figheight(10)
+fig.set_figwidth(15)

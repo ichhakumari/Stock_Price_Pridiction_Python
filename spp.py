@@ -136,3 +136,7 @@ axes[0,1].set_title('GOOGLE')
 
 MSFT['Daily Return'].plot(ax=axes[1,0], legend=True, linestyle='--', marker='o')
 axes[1,0].set_title('MICROSOFT')
+
+AMZN['Daily Return'].plot(ax=axes[1,1], legend=True, linestyle='--', marker='o')
+axes[1,1].set_title('AMAZON')
+

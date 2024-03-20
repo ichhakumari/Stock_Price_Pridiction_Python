@@ -127,3 +127,7 @@ for company in company_list:
 fig, axes = plt.subplots(nrows=2, ncols=2)
 fig.set_figheight(10)
 fig.set_figwidth(15)
+
+AAPL['Daily Return'].plot(ax=axes[0,0], legend=True, linestyle='--', marker='o')
+axes[0,0].set_title('APPLE')
+

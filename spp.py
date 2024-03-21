@@ -147,4 +147,9 @@ plt.figure(figsize=(12, 9))
 
 for i, company in enumerate(company_list, 1):
     plt.subplot(2, 2, i)
-   
+    company['Daily Return'].hist(bins=50)
+    plt.xlabel('Daily Return')
+    plt.ylabel('Counts')
+    plt.title(f'{company_name[i - 1]}')
+
+plt.tight_layout()

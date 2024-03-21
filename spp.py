@@ -141,3 +141,10 @@ AMZN['Daily Return'].plot(ax=axes[1,1], legend=True, linestyle='--', marker='o')
 axes[1,1].set_title('AMAZON')
 
 fig.tight_layout()
+
+
+plt.figure(figsize=(12, 9))
+
+for i, company in enumerate(company_list, 1):
+    plt.subplot(2, 2, i)
+   

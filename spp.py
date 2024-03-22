@@ -153,3 +153,12 @@ for i, company in enumerate(company_list, 1):
     plt.title(f'{company_name[i - 1]}')
 
 plt.tight_layout()
+
+
+# Grab all the closing prices for the tech stock list into one DataFrame
+
+closing_df = pdr.get_data_yahoo(tech_list, start=start, end=end)['Adj Close']
+
+# Make a new tech returns DataFrame
+tech_rets = closing_df.pct_change()
+tech_rets.head()

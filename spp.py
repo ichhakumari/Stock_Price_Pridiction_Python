@@ -162,3 +162,7 @@ closing_df = pdr.get_data_yahoo(tech_list, start=start, end=end)['Adj Close']
 # Make a new tech returns DataFrame
 tech_rets = closing_df.pct_change()
 tech_rets.head()
+
+
+# Comparing Google to itself should show a perfectly linear relationship
+sns.jointplot(x='GOOG', y='GOOG', data=tech_rets, kind='scatter', color='seagreen')

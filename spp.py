@@ -166,3 +166,6 @@ tech_rets.head()
 
 # Comparing Google to itself should show a perfectly linear relationship
 sns.jointplot(x='GOOG', y='GOOG', data=tech_rets, kind='scatter', color='seagreen')
+
+# We'll use joinplot to compare the daily returns of Google and Microsoft
+sns.jointplot(x='GOOG', y='MSFT', data=tech_rets, kind='scatter')

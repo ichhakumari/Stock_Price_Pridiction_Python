@@ -169,3 +169,8 @@ sns.jointplot(x='GOOG', y='GOOG', data=tech_rets, kind='scatter', color='seagree
 
 # We'll use joinplot to compare the daily returns of Google and Microsoft
 sns.jointplot(x='GOOG', y='MSFT', data=tech_rets, kind='scatter')
+
+# We can simply call pairplot on our DataFrame for an automatic visual analysis
+# of all the comparisons
+
+sns.pairplot(tech_rets, kind='reg')
